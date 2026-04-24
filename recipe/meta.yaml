@@ -1,5 +1,5 @@
 {% set name = "sqlalchemy-continuum" %}
-{% set version = "1.4.2" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sqlalchemy_continuum-{{ version }}.tar.gz
-  sha256: 0fd2be79f718eda47c2206879d92ec4ebf1889364637b3caf3ee5d34bd19c8e3
+  sha256: 2571d6eb6156bc8562afb392fdddeb4bb31e44a1fd1f3788cb625efe2f696c63
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
